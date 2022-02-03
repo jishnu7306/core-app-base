@@ -23,6 +23,8 @@ urlpatterns = [
     path('reportedissue', views.reportedissue),
     path('reportissue', views.reportissue),
     path('reportedissuesub', views.reportedissuesub),
+    path('applyleave', views.applyleave),
+    path('applyleavesub', views.applyleavesub),
 
     
     

@@ -14,3 +14,9 @@ def reportissue(request):
 def reportedissuesub(request):
     return render(request,'reportedissuesub.html')
 
+def applyleave(request):
+    return render(request,'applyleave.html')
+
+def applyleavesub(request):
+    return render(request,'applyleavesub.html')
+

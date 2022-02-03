@@ -1,11 +1,27 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-
+<div class="content-wrapper"> 
 <div class="row ">
     <div class="col-md-12 grid-margin">
         <div class="card">
             <div class="card-body">
+                <div class="page-header">
+                    <h4 class="page-title"> TRAINERS </h4>
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb ">
+                                 
+                        <li class="nav-item">
+                          <div class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="mdi mdi-account-search" style="font-size:20px; "></i>
+                            </button>
+                          </div>
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
                 <!-- <div>
                     <ul class="navbar-nav">
                        <li class="nav-item ">
@@ -27,9 +43,9 @@
                     </label>
                                     </div> 
                                 </th> -->
-                                <th> Name </th>
-                                <th> Msg </th>
-                                <th> Status </th>
+                                <th> <h4>Name</h4> </th>
+                                <th> <h4>Message</h4> </th>
+                                <th> <h4>Status</h4> </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,12 +61,15 @@
                                     <!-- <img src="assets/images/faces/face1.jpg" alt="image" /> -->
                                     <span class="ps-2">Henry Klein</span>
                                 </td>
-                                <td style="width: 90px;"> We’re currently investigating reports of a potential service interruption with < impacted services >. We apologize for any inconvenience and will post another update as soon as we learn more. </td>
+                                <td style="
+                                    width: 110px;
+                                    word-wrap: break-word;
+                                  ">asdsfgsgggsgsgsgsgsgsssssgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg </td>
                                 <!-- <td> Dashboard </td> -->
                                 <!-- <td> Credit card </td>
                                 <td> 04 Dec 2019 </td> -->
                                 <td>
-                                    <div class="badge badge-outline-success"style="width: 90px;">Soild</div>
+                                    <div class="badge badge-outline-success" style="width: 90px;">solved</div>
                                 </td>
                             </tr>
                             <tr>
@@ -65,12 +84,12 @@
                                     <!-- <img src="assets/images/faces/face2.jpg" alt="image" /> -->
                                     <span class="ps-2">Estella Bryan</span>
                                 </td>
-                                <td style="width: 90px;">We’re currently investigating reports of a potential service interruption with < impacted services >. We apologize for any inconvenience and will post another update as soon as we learn more.</td>
+                                <td style="width: 90px;"></td>
                                 <!-- <td> Website </td> -->
                                 <!-- <td> Cash on delivered </td>
                                 <td> 04 Dec 2019 </td> -->
                                 <td>
-                                    <div class="badge badge-outline-warning"style="width: 90px;">Un-Soild</div>
+                                    <div class="badge badge-outline-danger" style="width: 90px;">Un-solved</div>
                                 </td>
                             </tr>
                             <tr>
@@ -90,7 +109,7 @@
                                 <!-- <td> Credit card </td>
                                 <td> 04 Dec 2019 </td> -->
                                 <td>
-                                    <div class="badge badge-outline-warning"style="width: 90px;">Un-Soild</div>
+                                    <div class="badge badge-outline-danger" style="width: 90px;">Un-solved</div>
                                 </td>
                             </tr>
                             <tr>
@@ -110,7 +129,7 @@
                                 <!-- <td> Online Payment </td>
                                 <td> 04 Dec 2019 </td> -->
                                 <td>
-                                    <div class="badge badge-outline-success"style="width: 90px;">Soild</div>
+                                    <div class="badge badge-outline-success" style="width: 90px;">solved</div>
                                 </td>
                             </tr>
                             <tr>
@@ -127,9 +146,9 @@
                                 </td>
                                 <td> 02312 </td>
                                 <!-- <td> Website </td> -->
-                                
+
                                 <td>
-                                    <div class="badge badge-outline-success" style="width: 90px;">Soild</div>
+                                    <div class="badge badge-outline-success" style="width: 90px;">solved</div>
                                 </td>
                             </tr>
                         </tbody>
@@ -138,6 +157,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 {% endblock %}
