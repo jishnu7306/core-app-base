@@ -1,17 +1,17 @@
 {% extends 'index.html' %} {% block content %}{% load static %}
 <div class="content-wrapper">
-    <div class="row mt-5">
+    <div class="row mt-8">
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Apply Leave</h4>
+                    <h3 class="card-title">Apply Leave</h3>
                     <br><br>
                     <form class="form-sample">
                         <!-- <p class="card-description"> Personal info </p> -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Name</label>
+                                    <label class="col-sm-3 col-form-label"><h5>Name</h5></label>
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" />
                                     </div>
@@ -21,7 +21,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Branch</label>
+                                    <label class="col-sm-3 col-form-label"><h5>Branch</h5></label>
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" />
                                     </div>
@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Designation</label>
+                                    <label class="col-sm-3 col-form-label"><h5>Designation</h5></label>
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" />
                                     </div>
@@ -41,7 +41,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Leave From</label>
+                                    <label class="col-sm-3 col-form-label"><h5>Leave From</h5></label>
                                     <div class="col-sm-9">
                                         <input type="date" class="drop form-control ml-3 mt-2" required>
                                     </div>
@@ -51,13 +51,14 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Leave To</label>
+                                    <label class="col-sm-3 col-form-label"><h5>Leave To</h5></label>
                                     <div class="col-sm-9">
                                         <input type="date" class="drop form-control ml-3 mt-2" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <br>
                         <div class="col-12">
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label"></label>
@@ -77,12 +78,13 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Reason</label>
+                                    <label class="col-sm-3 col-form-label"><h5>Reason</h5></label>
                                     <div class="col-sm-9">
-                                        <textarea class="col-12 grid-margin stretch-card" style="height: 150px;" id="exampleTextarea1" rows="4"></textarea>
+                                        <textarea class="col-12 grid-margin stretch-card bg-dark text-light" style="height: 150px;" id="exampleTextarea1" rows="4"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -91,10 +93,11 @@
                             <div class="col-12">
                                 <div class="form-group row">
                                     <div class="col-sm-9">
-                                        <button type="submit" class="btn btn-primary me-2" style="margin-right:-4vh;">Submit</button>
+                                        <button type="submit" onclick="redirect()" class="btn btn-primary me-2 " >Submit</button>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
             </div>
@@ -103,13 +106,10 @@
     </div>
 </div>
 
-{% endblock %}
+<script>
+    function redirect(){
+      window.location.href="/applyleave"
+    }
+</script>
 
-<div class="row pt-1">
-    <div class="col-md-4">
-    <div class="text-light mr-2 ml-3 mt-2">Due Date</div>
-    </div>
-    <div class="col-md-8 ">
-     <input type="date" class="drop form-control ml-3 mt-2" required>
-   </div>
-  </div>
+{% endblock %}
