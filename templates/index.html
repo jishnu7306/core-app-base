@@ -25,6 +25,10 @@
     <script src="{% static 'assets/vendors/js/vendor.bundle.base.js'%}"></script>
     <script src="{% static 'assets/vendors/chart.js/Chart.min.js'%}"></script>
     <script src="{% static 'assets/vendors/chart.js/Chart.min.js'%}"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    crossorigin="anonymous">
   </head>
   <style>
     @media (max-width:992px){
@@ -42,8 +46,8 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo text-light text-decoration-none" href="/index"><p style="color: white; opacity: 1; font-size: 35px;margin-top: 3vh;">iNFOX</p></a>
-          <a class="sidebar-brand brand-logo-mini text-light text-decoration-none" href="/index"><p style="color: white; opacity: 1; font-size: 35px;margin-top: 3vh;">i</p></a>
+          <a class="sidebar-brand brand-logo text-light text-decoration-none" href="/app/index"><p style="color: white; opacity: 1; font-size: 35px;margin-top: 3vh;">iNFOX</p></a>
+          <a class="sidebar-brand brand-logo-mini text-light text-decoration-none" href="/app/index"><p style="color: white; opacity: 1; font-size: 35px;margin-top: 3vh;">i</p></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
@@ -114,9 +118,9 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="/reportedissue">
-              <span class="menu-icon">
-                <i class="mdi mdi-file-document-box"></i>
+            <a class="nav-link" href="/app/reportedissue">
+              <span class="menu-icon ">
+                <i class="mdi mdi-file-document-box text-danger"></i>
               </span>
               <span class="menu-title">Reported Issues</span>
             </a>
@@ -138,7 +142,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="/applyleave" >
+            <a class="nav-link"  href="/app/applyleave" >
               <span class="menu-icon">
                 <i class="mdi mdi-account-multiple-minus"></i>
               </span>
@@ -169,28 +173,7 @@
               <span class="menu-title">New Trainees</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="/Calander/">
-              <span class="menu-icon">
-                <i class="mdi mdi-contacts"></i>
-              </span>
-              <span class="menu-title">Calander</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="/Requestedleave/">
-              <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
-              </span>
-              <span class="menu-title">requested leave</span>
-            </a>
-            <li class="nav-item menu-items">
-              <a class="nav-link" href="/Attendancetable/">
-                <span class="menu-icon">
-                  <i class="mdi mdi-table-large"></i>
-                </span>
-                <span class="menu-title">Attendance Table</span>
-              </a>
+        
         </ul>
       </nav>
       <!-- partial -->
@@ -239,12 +222,12 @@
         </nav>
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
+        <div class="content-wrapper">
        {%block content%}
        
        
        {%endblock%}
-          </div>
+        </div>
        <div>
       <!-- main-panel ends -->
     </div>

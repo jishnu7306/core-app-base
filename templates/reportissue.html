@@ -9,20 +9,33 @@
                         <div>
                             <div class="col-12 grid-margin stretch-card">
                                 <div class="col-12">
-                                    <h3 class="mb-0">Report Matter</h3>
-                                    <br><br>
-                                    <textarea class="col-12 grid-margin stretch-card bg-dark text-light" style="height: 300px;" id="exampleTextarea1" rows="4"></textarea>
-                                    <br><br>
-                                    <button type="submit" class="btn btn-primary me-2 " >Submit</button>
+                                    <h3 class="mb-0">Report  Matter</h3>
+                                    <br>
+                                    <textarea class="col-12 form-control  text-light" style="height: 300px; background-color: #2A3038; "  rows="4"></textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>     
-                    <!-- <h6 class="text-muted">Trainers</h6> -->
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-7" class="pull-right" >
+                            <button type="submit" onclick="redirect()" class="btn btn-outline-success btn-icon-text" >
+                            Submit
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- button calling script (line 16-17)-->
+<script>
+    function redirect(){
+      window.location.href="/app/reportedissue"
+    }
+</script>
 
 {% endblock %}
