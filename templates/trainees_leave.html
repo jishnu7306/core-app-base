@@ -1,0 +1,186 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+
+
+
+  <div class="row ">
+    <div class="col-12 grid-margin">
+      <div class="card">
+        <div class="card-body">
+          <div class="row" style="margin-top: -16px">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+              <br>
+              <h4>Trainees leave list</h4>
+              <br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+              <form>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control text-white" placeholder="Search" />
+                  <div class="input-group-append">
+                    <span class="input-group-text bg-primary"><i class="fas fa-search text-light"
+                        style="font-size: 18px"></i></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+          <!-- table start -->
+
+          <div class="table-responsive">
+            <table class="table   ">
+              <thead>
+
+                <tr>
+                  <th>Profile</th>
+                  <th> Trainees Name </th>
+                  <th> Date from</th>
+                  <th> Date To </th>
+                  <th> Status </th>
+
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <img src="{% static '/assets/images/faces/face1.jpg' %}" alt="image" />
+                    </a>
+                  </td>
+                  <td>
+
+
+                    <a href="#" style="text-decoration:none; color: #6C7293">
+                      <span class="ps-2">Henry Klein</span></a>
+                  </td>
+
+                  <td> 02 dec 2021</td>
+                  <td> 04 Dec 2021 </td>
+                  <td>
+                    <div class="badge badge-outline-success">Approved</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <img src="{% static '/assets/images/faces/face2.jpg' %}" alt="image" />
+                    </a>
+                  </td>
+                  <td>
+
+                    <a href="#" style="text-decoration:none; color: #6C7293">
+                      <span class="ps-2">Estella Bryan</span></a>
+                  </td>
+
+                  <td> 02 dec 2021</td>
+                  <td> 04 Dec 2021 </td>
+                  <td>
+                    <div class="badge badge-outline-warning">Pending</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <img src="{% static '/assets/images/faces/face5.jpg' %}" alt="image" />
+                    </a>
+                  </td>
+
+                  <td>
+                    <a href="#" style="text-decoration:none; color: #6C7293">
+                      <span class="ps-2">Lucy Abbott</span></a>
+                  </td>
+
+                  <td> 02 dec 2021</td>
+                  <td> 04 Dec 2021 </td>
+                  <td>
+                    <div class="badge badge-outline-danger">Rejected</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <img src="{% static '/assets/images/faces/face3.jpg' %}" alt="image" />
+                    </a>
+                  </td>
+                  <td>
+
+                    <a href="#" style="text-decoration:none; color: #6C7293">
+                      <span class="ps-2">Peter Gill</span></a>
+                  </td>
+
+                  <td> 02 dec 2021</td>
+                  <td> 04 Dec 2021 </td>
+                  <td>
+                    <div class="badge badge-outline-success">Approved</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <img src="{% static '/assets/images/faces/face4.jpg' %}" alt="image" />
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" style="text-decoration:none; color: #6C7293">
+                      <span class="ps-2">Sallie Reyes</span></a>
+                  </td>
+
+                  <td> 02 dec 2021</td>
+                  <td> 04 Dec 2021 </td>
+                  <td>
+                    <div class="badge badge-outline-success">Approved</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <img src="{% static '/assets/images/faces/face5.jpg' %}" alt="image" />
+                    </a>
+                  </td>
+
+                  <td>
+                    <a href="#" style="text-decoration:none; color: #6C7293">
+                      <span class="ps-2">Lucy Abbott</span></a>
+                  </td>
+
+                  <td> 02 dec 2021</td>
+                  <td> 04 Dec 2021 </td>
+                  <td>
+                    <div class="badge badge-outline-danger">Rejected</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <img src="{% static '/assets/images/faces/face1.jpg' %}" alt="image" />
+                    </a>
+                  </td>
+                  <td>
+
+
+                    <a href="#" style="text-decoration:none; color: #6C7293">
+                      <span class="ps-2">Henry Klein</span></a>
+                  </td>
+
+                  <td> 02 dec 2021</td>
+                  <td> 04 Dec 2021 </td>
+                  <td>
+                    <div class="badge badge-outline-success">Approved</div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
